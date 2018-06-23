@@ -204,7 +204,7 @@ class Facebook2OAuth2(FacebookOAuth2):
     ACCESS_TOKEN_URL = 'https://graph.facebook.com/v2.0/oauth/access_token'
     REVOKE_TOKEN_URL = 'https://graph.facebook.com/v2.0/{uid}/permissions'
     USER_DATA_URL = 'https://graph.facebook.com/v2.0/me'
-
+    REDIRECT_STATE = False
 
 class Facebook2AppOAuth2(Facebook2OAuth2, FacebookAppOAuth2):
     pass
